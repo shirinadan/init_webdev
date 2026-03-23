@@ -1,0 +1,20 @@
+[
+    {
+      "title": "DadGPT",
+      "image": "./assets/project-1.png",
+      "description": "A full-stack AI chat application that delivers advice and responses through a modern, responsive web interface.",
+      "link": "https://github.com/zmaraj/DadGPT"
+    },
+    {
+      "title": "My Music Page",
+      "image": "./assets/project-2.png",
+      "description": "A modern music sharing platform built with React, Tailwind, Node, Express, and MongoDB for a seamless user experience.",
+      "link": "https://github.com/zmaraj/mymusicpage"
+    },
+    {
+      "title": "VPay",
+      "image": "./assets/project-3.png",
+      "description": "A demo that shows a voice-driven \"payment\" flow. The browser captures speech, and simulates a payment response.",
+      "link": "https://github.com/zmaraj/Vpay"
+    }
+  ]

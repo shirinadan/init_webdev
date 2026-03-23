@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    
+    <!-- DESKTOP NAV -->
+    <nav id="desktop-nav">
+      <div class="logo">Shirina Shaji Daniel</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- MOBILE NAV -->
+    <nav id="mobile-nav">
+      <div class="logo">My Professional Portfolio</div>
+      <div class="mobile-menu-container">
+        <div class="hamburger-icon" onclick="toggleMenu()"></div>
+        <div class="mobile-menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- PROFILE SECTION -->
+    <section id="profile">
+      <div class="profile-picture-box">
+        <img
+          src="./assets/headshot.png"
+          alt="Shirina Daniel profile picture"
+        />
+      </div>
+      <div class="profile-text-box">
+        <p class="greeting-text">Hello, I'm</p>
+        <h1 class="main-heading">Shirina</h1>
+        <p class="subtitle-text">Computer Science Student at FIU</p>
+        <div class="button-container">
+          <button class="btn button-outline" id="resumeBtn">
+            <a
+              href="./assets/Shirina Shaji Daniel_Resume.pdf"
+              target="_blank"
+            >
+              Resume
+            </a>
+          </button>
+          <button class="btn button-outline">
+            <a
+              href="https://github.com/shirinadan"
+              target="_blank"
+            >
+              GitHub
+            </a>
+          </button>
+          <button class="btn button-outline">
+            <a
+              href="https://www.linkedin.com/in/shirinadan/"
+              target="_blank"
+            >
+              LinkedIn
+            </a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT + EXPERIENCE + SKILLS/EDUCATION -->
+    <section id="about">
+      <h1 class="main-heading">About Me</h1>
+      
+      <div class="about-text-box">
+        <p>
+          I’m a junior studying Computer Science at Florida International University,
+          passionate about creating AI-powered solutions that make a real impact.
+          I enjoy turning complex problems into practical applications using data,
+          machine learning, and thoughtful software design.
+        </p>
+        <p>
+          I work across the stack — Python, Java, and JavaScript/React — and have experience leading 
+          projects, deploying ML models, and building web applications that are both functional 
+          and user-friendly.
+        </p>
+      </div>
+
+      <div class="about-content-wrapper">
+        
+        <!-- EXPERIENCE BOX -->
+        <div class="experience-box" id="experience">
+          <div class="box-title">
+            <img src="./assets/experience.png" alt="Experience icon" class="small-icon" />
+            <h3>Experience</h3>
+          </div>
+          <ul class="experience-list">
+            <li>
+              <h4>Learning Assistant - FIU</h4>
+              Mentoring students in Introduction to Human-Computer Interaction (CEN 3721) by guiding them in 
+              usability principles, user-centered design, and course projects through one-on-one and small-group support.
+              Collaborating with the course professor to facilitate learning activities, provide constructive 
+              feedback on assignments, and promote an engaging, inclusive hybrid learning environment.
+            </li>
+            <li>
+              <h4>Sprinternship Facilitator</h4>
+              Selected as one of 10 facilitators for the Intro to Web Development track in the Break Through Tech 
+              Sprinternship program, teaching a cohort of 25–30 students through biweekly 6-hour sessions over a 7-week intensive.
+              Instruct and mentor students in full-stack web development, providing hands-on guidance, debugging support, and 
+              project feedback to strengthen technical and collaborative skills.
+            </li>
+            <li>
+              <h4>INIT Uplift Mentor</h4>
+              Mentor and guide students pursuing careers in tech through workshops, skill-building sessions, and community events,
+              collaborating with peers to foster an inclusive learning environment and empower underrepresented groups in technology.
+            </li>
+          </ul>
+        </div>
+
+        <!-- SKILLS + EDUCATION -->
+        <div class="details-wrapper">
+          
+          <div class="info-card">
+            <img src="./assets/skills.png" alt="Skills Icon" class="small-icon" />
+            <h3>Skills</h3>
+            <p>
+              Java(OOP), Python(OOP), JavaScript, TypeScript, HTML, CSS, Node.js, React, Vue, Vite, 
+              Data Structures, Control Flow Graph (CFG) Analysis, SQL, NoSQL, Linux/UNIX, 
+              Full-stack Development, Software Development Fundamentals, Cybersecurity
+            </p>
+          </div>
+
+          <div class="info-card">
+            <img src="./assets/education.png" alt="Education Icon" class="small-icon" />
+            <h3>Education</h3>
+            <p>
+              BA in Computer Science<br />
+              Florida International University – Miami, FL<br />
+              Expected 2027
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+      <h1 class="main-heading">Projects</h1>
+      
+      <div class="projects-wrapper" id="projects-container">
+        
+        <div class="project-card">
+          <p class="demo-caption">Demo Video of the Project</p>
+                    <iframe
+                        class="demo-thumbnail"
+                        src="https://drive.google.com/file/d/1Wkuk6jTrEsrmzRCtCiYcu8L-9-XCB4pH/preview"
+                        width=""
+                        height=""
+                        frameborder="0"
+                        allow="autoplay; encrypted-media"
+                        allowfullscreen>
+                        </iframe>
+          <h3>My Music Page</h3>
+          <p>
+            Designed and implemented UI components for a Spotify-inspired playlist web app in a team of 10 using Figma, React, 
+            TypeScript, and Tailwind CSS. Built responsive, interactive frontend features, practicing component-based design, Git/GitHub,
+            and team collaboration.
+          </p>
+          <a
+            href="https://github.com/shirinadan/mymusicpage"
+            class="btn button-outline"
+            target="_blank"
+          >
+            GitHub Repo
+          </a>
+        </div>
+
+        <div class="project-card">
+          <p class="demo-caption">Demo Video of the Dashboard</p>
+                    <iframe
+                        class="demo-thumbnail"
+                        src="https://drive.google.com/file/d/1dARl9_XCVIQNGW3l2x_Y2Iqq0aU6EU0U/preview"
+                        width=""
+                        height=""
+                        frameborder="0"
+                        allow="autoplay; encrypted-media"
+                        allowfullscreen>
+                        </iframe>
+          <h3>Water Quality Data Project (SDIR)</h3>
+          <p>
+            Built an end-to-end data pipeline by cleaning CSVs (including z-score outlier removal), storing data in MongoDB, and 
+            developing a Flask REST API to enable structured access to water quality data. Created an interactive Streamlit dashboard 
+            with Plotly visualizations, gaining experience in Python, ETL, API design, full-stack development, and team collaboration.
+          </p>
+          <a href="https://github.com/shirinadan/Water-Quality-Project"
+            class="btn button-outline"
+            target="_blank"
+          >GitHub Repo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <h1 class="main-heading">Contact Me</h1>
+      <div class="contact-card-wrapper">
+        
+        <div class="contact-item">
+          <img src="./assets/email.png" alt="Email" class="small-icon email-icon" />
+          <p><a href="mailto:slnu006@fiu.edu">slnu006@fiu.edu</a></p>
+        </div>
+        
+        <div class="contact-item">
+          <img src="./assets/image.png" alt="Discord" class="small-icon" />
+          <p><a href="#" target="_blank">shirinadan</a></p>
+        </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <p>Copyright &#169; 2026 Shirina Daniel. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
